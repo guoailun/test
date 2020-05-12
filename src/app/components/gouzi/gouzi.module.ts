@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GouziComponent } from './gouzi.component';
 import { Routes, RouterModule } from '@angular/router';
+import { SpyDirective } from 'src/app/directive/spy.directive';
+import { FormsModule } from '@angular/forms';
+import { Child3Component } from '../child3/child3.component';
 
 const routes: Routes = [
   {
@@ -11,9 +14,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [GouziComponent],
+  declarations: [GouziComponent, SpyDirective, Child3Component],
   imports: [
-    CommonModule,
+  CommonModule,
+    FormsModule,
     RouterModule.forChild(routes)
   ]
 })

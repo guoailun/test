@@ -1,1 +1,17 @@
 <p>gouzi works!</p>
+<input [(ngModel)]="heroname" />
+<button (click)="add()">add</button>
+<button (click)="reset()">reset</button>
+
+<div *ngFor="let hero of heroes" appSpy class="heroes">
+  {{hero}}
+</div>
+
+<h3>child3</h3>
+<label for="propetryName"
+>propetryName <input class="form-control" name="propetryName" [(ngModel)]="propetryName" required />
+</label>
+<label for="deepPropetryName"
+>deepPropetryName <input class="form-control" name="deepPropetryName" [(ngModel)]="deepPropetryName.name" required />
+</label>
+<app-child3 [propetryName]="propetryName" [deepPropetryName]="deepPropetryName"></app-child3>

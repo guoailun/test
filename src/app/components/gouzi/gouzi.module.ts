@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SpyDirective } from 'src/app/directive/spy.directive';
 import { FormsModule } from '@angular/forms';
 import { Child3Component } from '../child3/child3.component';
+import { UnlessDirective } from 'src/app/directive/unless.directive';
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [GouziComponent, SpyDirective, Child3Component],
+  declarations: [GouziComponent, SpyDirective, Child3Component, UnlessDirective],
   imports: [
   CommonModule,
     FormsModule,

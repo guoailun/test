@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { Child1Component } from '../child1/child1.component';
 import { Child2Component } from '../child2/child2.component';
 import { HighlightDirective } from 'src/app/directive/highlight.directive';
+import { MyPipePipe } from 'src/app/pipe/my-pipe.pipe';
 
 const routes: Routes = [
   {
@@ -15,7 +16,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent,Child1Component,Child2Component, HighlightDirective],
+  declarations: [
+    HomeComponent,
+    Child1Component,
+    Child2Component, 
+    HighlightDirective,
+    MyPipePipe
+  ],
   imports: [
     CommonModule,
     FormsModule,

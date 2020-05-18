@@ -11,6 +11,7 @@ export class GouziComponent implements OnInit {
 
   heroes = ['zw', 'lz', 'wp']
   heroname = '';
+  condition = false;
 
   propetryName = 'name1'
   deepPropetryName = {

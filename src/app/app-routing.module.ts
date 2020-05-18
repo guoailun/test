@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
@@ -11,7 +12,12 @@ const routes: Routes = [
   {
     path: 'gouzi',
     loadChildren: './components/gouzi/gouzi.module#GouziModule',
-  }
+  },
+  {
+    path: 'form',
+    loadChildren: './components/myform/myform.module#MyformModule',
+  },
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({

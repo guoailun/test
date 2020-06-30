@@ -7,6 +7,8 @@ import { Child1Component } from '../child1/child1.component';
 import { Child2Component } from '../child2/child2.component';
 import { HighlightDirective } from 'src/app/directive/highlight.directive';
 import { MyPipePipe } from 'src/app/pipe/my-pipe.pipe';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+
 
 const routes: Routes = [
   {
@@ -26,6 +28,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
+    NzButtonModule,
     RouterModule.forChild(routes)
   ]
 })

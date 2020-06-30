@@ -17,7 +17,7 @@ const routes: Routes = [
     path: 'form',
     loadChildren: './components/myform/myform.module#MyformModule',
   },
-  { path: '**', component: HomeComponent }
+  { path: '**', loadChildren: './components/home/home.module#HomeModule' }
 ];
 
 @NgModule({
